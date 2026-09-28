@@ -4,7 +4,7 @@
 
 **An offline, browser-based timer and data logger for *C. elegans* gentle touch assays.**
 
-**[Open the app → YOUR-DEPLOYED-LINK-HERE](https://YOUR-DEPLOYED-LINK-HERE)**
+**[Open the app → (https://dv-welp.github.io/touch-assay-timer/)**
 Works in any browser. On a phone, use "Add to Home Screen" to install it like an app.
 
 ## Why this exists
