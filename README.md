@@ -1,17 +1,21 @@
-<!-- Replace with your final logo once exported: <p align="center"><img src="assets/logo.png" width="120" alt="logo"></p> -->
+<p align="center"><img src="assets/logo.png" width="140" alt="Touch Assay Timer logo"></p>
 
 # Touch Assay Timer
 
 **An offline, browser-based timer and data logger for *C. elegans* gentle touch assays.**
 
-**[Open the app → (https://dv-welp.github.io/touch-assay-timer/)**
+**[Open the app → YOUR-DEPLOYED-LINK-HERE](https://YOUR-DEPLOYED-LINK-HERE)**
 Works in any browser. On a phone, use "Add to Home Screen" to install it like an app.
 
 ## Why this exists
 
 The gentle touch assay is usually run by hand: a separate timer app, a cell counter for responses, a paper notebook, then manual entry into a spreadsheet before any plotting or statistics. This tool handles the acquisition, logging, and organisation steps. You perform the assay; the app times the stimuli, records each response, and exports plot-ready tables.
 
-<!-- Optional: add your before/after workflow figure here (assets/workflow.png) -->
+<p align="center">
+  <img src="assets/workflow-before.png" width="48%" alt="Manual workflow: phone timer, tally counter, paper notebook, spreadsheet">
+  <img src="assets/workflow-after.png" width="48%" alt="With Touch Assay Timer: spreadsheet straight to plotting and statistics">
+</p>
+<p align="center"><sub>Before: timer, tally counter, notebook, manual entry &nbsp;→&nbsp; After: the app handles acquisition and logging</sub></p>
 
 <p align="center">
   <img src="assets/01-setup.jpg" width="19%" alt="Assay setup">
