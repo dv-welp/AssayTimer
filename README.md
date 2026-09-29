@@ -4,12 +4,13 @@
 
 **An offline, browser-based timer and data logger for *C. elegans* gentle touch assays.**
 
-**[Open the app → YOUR-DEPLOYED-LINK-HERE](https://YOUR-DEPLOYED-LINK-HERE)**
-Works in any browser. On a phone, use "Add to Home Screen" to install it like an app.
+**[Open the app → (https://dv-welp.github.io/touch-assay-timer/)]**
+
+Works in any browser, on any touchscreen device. On a phone, use "Add to Home Screen" to install it like an app.
 
 ## Why this exists
 
-The gentle touch assay is usually run by hand: a separate timer app, a cell counter for responses, a paper notebook, then manual entry into a spreadsheet before any plotting or statistics. This tool handles the acquisition, logging, and organisation steps. You perform the assay; the app times the stimuli, records each response, and exports plot-ready tables.
+The gentle touch assay was run by hand — a separate timer, a tally counter, a paper notebook, then manual spreadsheet entry before you can plot anything. This app replaces all of that: it times the stimuli, records each response, and exports a plot-ready spreadsheet.
 
 <p align="center">
   <img src="assets/workflow-before.png" width="48%" alt="Manual workflow: phone timer, tally counter, paper notebook, spreadsheet">
@@ -52,29 +53,17 @@ One `.xlsx` workbook per export, with separate sheets for each trial's **raw dat
   <img src="assets/export-pooled.png" width="32%" alt="Pooled sheet">
 </p>
 
-## Built to be trusted
+## Reliability
 
 - **Crash-safe:** data is saved to IndexedDB after every interval, asynchronously so it never interferes with a running assay. Trials interrupted without being finished are kept as *abandoned* trials.
 - **Read-only raw data:** once recorded, raw data is never modified.
 - **Explicit analysis rules:** anything excluded from analysis (ineligible runs, abandoned trials, a partial final bin) is flagged and visible, and you choose whether to include it.
 - **Offline:** no internet connection needed after the first load, and data stays on your device.
 
-## Tech
-
-Vanilla HTML, CSS and JavaScript. Progressive web app (service worker + manifest). IndexedDB for storage. No backend, no accounts, no tracking.
-
 ## Roadmap
 
 - Version 2.0: plotting and statistical analysis (R/Python)
-- Suggestions and issues are welcome via the Issues tab.
-
-## Running locally
-
-```bash
-git clone https://github.com/dv-welp/touch-assay-timer.git
-cd touch-assay-timer
-python3 -m http.server 8000   # then open http://localhost:8000
-```
+- Suggestions and issues are welcome.
 
 ## License
 
