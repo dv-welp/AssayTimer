@@ -1,6 +1,6 @@
 <p align="center"><img src="assets/logo.png" width="140" alt="Touch Assay Timer logo"></p>
 
-# Touch Assay Timer
+# AssayTimer
 
 **An offline, browser-based timer and data logger for *C. elegans* gentle touch assays.**
 
