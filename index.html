@@ -263,31 +263,74 @@
   <h2>User Guidelines</h2>
 
   <p>
-    This tool is designed to run simple touch / stimulus–response assays.
+    This app times a gentle touch assay, records each animal's response, and
+    exports the data ready for analysis.
   </p>
 
+  <h3>How a session is organised</h3>
   <ul>
-    <li>Each trial consists of multiple runs (animals).</li>
-    <li>Each run records whether a response occurred during each stimulus interval.</li>
-    <li>Taps are recorded per interval, not by reaction time.</li>
-    <li>Runs stopped early or trials abandoned are marked as ineligible for analysis.</li>
-    <li>All data can be exported to Excel.</li>
+    <li><strong>Assay</strong> — your configuration settings. Set this up once. Assays may contain one or more trials.</li>
+    <li><strong>Trial</strong> — all animals in one session. Trials typically contain multiple runs (animals) that may belong to one or more genotypes.</li>
+    <li><strong>Run</strong> — data from one animal. Time= ISI x Number of Stimulations. Each animal is a new run.</li>
+  </ul>
+  <p>
+    You can start as many trials as you like under one assay, and choose later
+    whether to export them separately or pooled together. Pooling trials gets you aummary statistics across all trials(sessions/sittings).
+  </p>
+
+  <h3>Running the timer</h3>
+  <ul>
+    <li>Select a genotype, then press <strong>Start Timer</strong>.</li>
+    <li>You'll hear a cue for each interval. Administer the stimulus as soon as the cue starts.</li>
+    <li>You can choose between three different types of cues from the settings menu.</li>
+    <li>Tap only if the animal does not respond. If it responds, don't tap.</li>
+    <li>Tapping more than once in the same interval only counts as one tap.</li>
+    <li>When the last interval finishes, the run ends automatically. Press <strong>Start Timer</strong> again for the next animal. You can switch genotypes in between runs.</li>
   </ul>
 
+  <h3>Stopping a run early</h3>
   <p>
-    <strong>Important:</strong>
+    Press <strong>Stop Run</strong> if you need to end a run before it finishes
+    (animal escapes, needs to be set aside, etc). The data already recorded is
+    kept, but the run is marked as not eligible for the binned analysis, since
+    it doesn't have a full set of intervals. It's still included in the raw
+    data export.
   </p>
 
+  <h3>Finishing a trial</h3>
+  <p>
+    Press <strong>Finish Trial</strong> once you're done with this sitting.
+    You can start a new trial afterwards under the same assay, or move on to
+    <strong>Export</strong>.
+  </p>
+  <p>
+    If the app is closed or refreshes unexpectedly during a trial, that trial
+    is kept but marked as <em>abandoned</em> so you know it wasn't properly
+    finished. Nothing is deleted.
+  </p>
+
+  <h3>Exporting</h3>
   <ul>
-    <li>Deleting an assay permanently removes all associated data.</li>
+    <li>Choose which trials to include — a single trial, or a pooled export across several.</li>
+    <li>Pooled exports include completed trials by default. Include abandoned trials only if you choose to.</li>
+    <li>The export always contains the full raw data, plus a binned analysis (percentage response per bin, with mean and SEM tables) for eligible runs.</li>
+    <li> In addition, touch index is computed for each genotype, where the percentage response of all subsequent touch-bins is normalised to the percentage response in the first bin, allowing you to appreciate differences in how various genotypes adapt to repeated stimuli without the intial difference in sensation as a confounding factor. </li>
+    <li>If your total number of stimulations isn't an exact multiple of the bin size, only full bins are analysed — the rest stays in the raw data, with all exclusions reported in a separate sheet in the workbook.</li>
+  </ul>
+
+  <h3>Important</h3>
+  <ul>
+    <li>Deleting an assay permanently removes all its trials and runs.</li>
     <li>Deleted assays cannot be recovered.</li>
-    <li>Export data before deleting if you wish to keep a record.</li>
+    <li>Export before deleting if you want to keep a record.</li>
+    <li>An assay will persist indefinitely till it is deleted.</li>
   </ul>
 
   <button id="closeGuidelines" type="button">
     Back
   </button>
 </section>
+
 
 <section id="savedAssaysScreen" hidden>
   
