@@ -13,8 +13,8 @@ Works in any browser, on any touchscreen device. On a phone, use "Add to Home Sc
 The gentle touch assay was run by hand — a separate timer, a tally counter, a paper notebook, then manual spreadsheet entry before you can plot anything. This app replaces all of that: it times the stimuli, records each response, and exports a plot-ready spreadsheet.
 
 <p align="center">
-  <img src="assets/workflow-before.png" width="48%" alt="Manual workflow: phone timer, tally counter, paper notebook, spreadsheet">
-  <img src="assets/workflow-after.png" width="48%" alt="With Touch Assay Timer: spreadsheet straight to plotting and statistics">
+  <img src="assets/workflow-before.png" width="48%" alt="Manual workflow: phone timer, tally counter, paper notebook, spreadsheet" style="border:1px solid #ccc; border-radius:6px; padding:4px;">
+  <img src="assets/workflow-after.png" width="48%" alt="With Touch Assay Timer: spreadsheet straight to plotting and statistics" style="border:1px solid #ccc; border-radius:6px; padding:4px;">
 </p>
 <p align="center"><sub>Before: timer, tally counter, notebook, manual entry &nbsp;→&nbsp; After: the app handles acquisition and logging</sub></p>
 
